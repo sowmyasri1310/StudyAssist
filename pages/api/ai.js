@@ -1,4 +1,3 @@
-// pages/api/ai.js
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -18,7 +17,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "API Key is missing in .env.local" });
   }
 
-  // 1. IMPROVED GLOBAL RULES
+  // 1. GLOBAL RULES
   const noMarkdown = "STRICT: Do not use any markdown formatting like stars (**), hashtags (#), or bolding. Return only plain text.";
   
   let languageInstruction = "";
@@ -44,8 +43,6 @@ RULES:
 3. Use '-' as the bullet character.
 4. Keep the language simple so a student can understand it easily.
 5.If there is a side heading include that and add its specific bullet points,do not leave a gap between the side heading and the bullet points.Only give gap between the one side heading topic to other side heading topic.
-
-
 
 
 TEXT TO Breakdown:

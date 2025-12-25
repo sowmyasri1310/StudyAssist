@@ -171,10 +171,9 @@ export default function Home() {
       </header>
 
       <main className="w-full mt-10 relative z-10 max-w-7xl mx-auto px-6 pb-10">
-        {/* responsiveness fix: use items-start to allow independent card scaling */}
+       
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 items-start">
-          
-          {/* FIX: Changed flex-basis to w-full lg:w-[42%] for better resizing */}
+
           <section className={`w-full lg:w-[42%] ${current.card1} p-6 rounded-[2rem] shadow-2xl border-4 transition-all duration-500 self-start`}>
             <h2 className={`text-xl mb-4 ${headingFont}`}>Paste Lesson</h2>
             <textarea
@@ -228,7 +227,7 @@ export default function Home() {
             {error && <div className="mt-4 text-[10px] bg-red-500/20 p-2 rounded-lg text-center border border-red-500/40">{error}</div>}
           </section>
           
-          {/* FIX: Changed flex-basis to w-full lg:w-[58%] for better resizing */}
+        
           <aside className={`w-full lg:w-[58%] ${current.card2} p-6 rounded-[2rem] shadow-2xl border-4 transition-all duration-500 flex flex-col`}>
             <div className="flex justify-between items-center mb-4">
               <h3 className={`text-xl ${headingFont}`}>Output</h3>
