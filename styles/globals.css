@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0f172a;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+textarea.resizable {
+  resize: vertical;
+  min-height: 150px;
+  max-height: 600px;
+}
+pre.result {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.result {
+  max-height: calc(75vh);
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
